@@ -1,5 +1,5 @@
 #!/bin/bash
-while sleep 18
+while sleep 18000
 do
 sudo git add .
 sudo git commit -m "auto commit"
