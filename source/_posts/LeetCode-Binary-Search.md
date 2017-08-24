@@ -21,10 +21,10 @@ tags: Binary-Search
 有些二分法是和Tree, 或者 BST 相结合．
 
 二分法模板四要点：
-1.start + 1 < end  相邻或相交时退出，避免死循环
-2.mid = start + (end - start) / 2 防溢出
+1. start + 1 < end  相邻或相交时退出，避免死循环
+2. mid = start + (end - start) / 2 防溢出
 3. mid == < >, start = mid, end = mid
-4.A[start], B[start] 比较两个可能答案
+4. A[start], B[start] 比较两个可能答案
 
 模版的方法并不是直接在while中确定最优解，而是通过start + 1 < end, 保留两个可能情况
 
@@ -40,23 +40,40 @@ O(1) space, O(n) time
 ## 29. Divide Two Integers
 
 ## 33. Search in Rotated Sorted Array
+这题通过比较 nums[mid] 和 nums[start]  的大小，来判断哪一边是有序的。
+nums[mid] > nums[start] , start ~ mid 有序
+nums[mid] < nums[start], mid ~ end 有序
+在有序条件下，再判断 target 是否在有序的区间
 
 ## 34 Search for a Range
+这题就是用两次二分，第一次找左边界，第二次找右边界。
 
 ## 35 Search Insert Position
+一般二分法
 
 ## 50 Pow(x,y)
+这是一题典型的二分法将 O(n) --> O(logn)
+x.pow(x,y-1) == pow(x,y/2) * pow(x,y -y/2)
+有个小trick就是不能直接 return pow(x,y/2) * pow(x, y - y/2)
+因为 y = 1时，y - y / 2 一直为1，stackoverflow
+判断奇偶：
+    n % 2 == 0 : return pow(x,y/2) * pow(x, y/2)
+    n % 2 == 1 : return pow(x, y/2) * pow(x,y/2) * x
+但是这样依然超时了，因为两次调用pow(x, y/2) 是多余的.
+1. double v = pow(x, y/2) v*v*x 或者 v * v
+2. pow(x * x, y / 2)
 
 ## 69 Sqrt(x)
+就是这么简单的代码都写不好,这题用二分法就是找到 i * i <= x 的最后一个，套用九章模版
 
 ## 74 Search a 2D matrix
+思路一:通过 i = mid / n, j = mid % n 将二维转化成一维
+思路二:用两次二分,先确定行，在确定列
 
 ## 81 Search in Rotated Sorted Array II
-
-
-
-
-
+有重复怎么办？1，1，1，1，3，1中找3，O(n)
+当nums[start] == nums[mid] 时 start++
+这题出题点在于时间复杂度为O(n)
 
 
 ## 153 Find-Minimum-in-Rotated-Sorted-Array
@@ -90,5 +107,7 @@ two pointer ?
 ## 230 Kth Smallest Element in a BST
 
 ## 240.Search a 2D Matrix II
+74题是第n + 1行的第一个比第n行的最后一个大，而这题只是按行，按列递增，就不能转成一维了，从左下角开始考虑
+i = row - 1, j = 0, Matrix[i][j] < target j++, matrxi[i][j] > target i--
 ## 270 Closest Binary Search Tree Value  
 

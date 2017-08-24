@@ -34,7 +34,7 @@ query6    1       7     us    0      0      60
 query6    2       7     us    0      0      60
 query6    6       7     us    0      0      60
 ```
-
+<!-- more -->
 create table:
 
 ```sql
