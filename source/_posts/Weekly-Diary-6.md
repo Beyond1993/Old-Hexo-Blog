@@ -15,4 +15,12 @@ tags:
 今天遇到一个及其恶心的问题，在算n_candidates的时候，由于算每个月的要花很长时间，我把每两天的作为一个job跑
 但是只能同时跑十个，关键是已经cancel的job 貌似还在run. 
 
-而且我的输出文件只有一个000000, 825M，可以将其分成100份。
+2. 而且我的输出文件只有一个000000, 825M，可以将其分成100份。
+   方法1. 设置reduce的数量： set mapred.reduce.tasks=10
+   方法2. 设置partition
+   方法3. 实现custom reducer
+
+3. 分清hive的每个部分，对应的是mapper 还是 reducer
+select *  <==> mapper
+order by <==> reducer
+group by <==> reducer   
