@@ -16,3 +16,14 @@ ResourceManager:负责整个系统的资源管理和分配
 ApplicationMaster:负责单个应用程序的管理
 
 注:[MPI(Message Passing Interface)](https://en.wikipedia.org/wiki/Message_Passing_Interface)
+
+```text                        
+                            + Scheduler
+     +ResourceManager(RM)---+ 
+     |                      + Applications Manager(ASM)
+Yarn +ApplicationMaster(AM)
+     |
+     +NodeManager(NM)
+     |
+     +Container
+```

@@ -24,3 +24,4 @@ Twitter 发来OA, 先把题目过一遍.
    [Lexicographically minimal string rotation](https://en.wikipedia.org/wiki/Lexicographically_minimal_string_rotation)
    suffix array?
    [anwser](https://github.com/marioyc/Online-Judge-Solutions/blob/master/SPOJ/Classical/3605%20-%20Minimum%20Rotations.cpp)
+   最小字典序旋转字符串，是归一化同构字符串的常见方法，归一化后的字符串，保留了结构信息，便于比较
