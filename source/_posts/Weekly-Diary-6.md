@@ -20,8 +20,22 @@ tags:
    方法2. 设置partition
    方法3. 实现custom reducer
 mapper 的数量由输入文件数所决定的，所以以后生成中间文件的时候，一定要注意将文件分开来
+map 数量一般是不能决定的，但是在网上看到
+Mapred.min.split.size
+Mapred.max.split.size
+
+Note that on Hadoop 2 (YARN), the mapred.map.tasks and mapred.reduce.tasks are deprecated and are replaced by other variables:
+
+mapred.map.tasks     -->    mapreduce.job.maps 没啥用
+mapred.reduce.tasks  -->    mapreduce.job.reduces
+
 
 3. 分清hive的每个部分，对应的是mapper 还是 reducer
 select *  <==> mapper
 order by <==> reducer
 group by <==> reducer   
+
+4. 大数据工作准则
+保持对数据的敏感，将工作重心从代码转移到数据本身。随时验证数据的准确性。
+了解大数据平台本身特性，更好的完成，优化查询。
+将HQL查询，结构化，记录每张表的生成，插入过程。
