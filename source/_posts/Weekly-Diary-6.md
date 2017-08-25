@@ -19,6 +19,7 @@ tags:
    方法1. 设置reduce的数量： set mapred.reduce.tasks=10
    方法2. 设置partition
    方法3. 实现custom reducer
+mapper 的数量由输入文件数所决定的，所以以后生成中间文件的时候，一定要注意将文件分开来
 
 3. 分清hive的每个部分，对应的是mapper 还是 reducer
 select *  <==> mapper
