@@ -25,3 +25,7 @@ Twitter 发来OA, 先把题目过一遍.
    suffix array?
    [anwser](https://github.com/marioyc/Online-Judge-Solutions/blob/master/SPOJ/Classical/3605%20-%20Minimum%20Rotations.cpp)
    最小字典序旋转字符串，是归一化同构字符串的常见方法，归一化后的字符串，保留了结构信息，便于比较
+   input : baabccd , baabccd-> aabccd 旋转一次
+output : 1
+input : anadama , anadama - > nadamaa -> adamaan -> damaana -> amaannad -> maanada - > aanadam ,
+output 6
