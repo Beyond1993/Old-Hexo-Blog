@@ -29,6 +29,9 @@ Note that on Hadoop 2 (YARN), the mapred.map.tasks and mapred.reduce.tasks are d
 mapred.map.tasks     -->    mapreduce.job.maps 没啥用
 mapred.reduce.tasks  -->    mapreduce.job.reduces
 
+**SET hive.merge.mapfiles=false;
+SET hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat;**
+亲测有效。
 
 3. 分清hive的每个部分，对应的是mapper 还是 reducer
 select *  <==> mapper
