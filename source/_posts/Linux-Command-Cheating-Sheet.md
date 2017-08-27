@@ -1,6 +1,23 @@
 ---
 title: Linux-Command-Cheating-Sheet
 date: 2017-08-27 16:53:57
-categories:
+categories: Linux
 tags:
 ---
+## touch
+touch 用来更新原文件时间，文件没有则创建新文件
+## find
+find 命令默认是递归的
+
+按文件名查找：
+find ./ -name "filename"
+find ./ -name "*.class"
+
+更新文件：
+find ./ -exec touch {} \;
+-exec 后面是一个表达式,{} 代表前找到的文件, ;是表达式终止符，不加\, ;会被当作find 整体的一部分处理 find ;
+
+查找某一类文件的大小:
+find ./ -name "*.class" -exec du -ch {} + | grep total
+
+
