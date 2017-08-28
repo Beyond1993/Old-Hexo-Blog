@@ -7,7 +7,7 @@ tags:
 
 Twitter 发来OA, 先把题目过一遍.
 
-1. longest length of subarray
+1. longest subarray sum less than k
    input: int array , L
    output: length of subarray (sum <= K)
    example:
