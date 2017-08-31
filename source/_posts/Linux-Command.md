@@ -1,5 +1,5 @@
 ---
-title: Linux-Command-Cheating-Sheet
+title: Linux-Command
 date: 2017-08-27 16:53:57
 categories: Linux
 tags:
@@ -20,4 +20,7 @@ find ./ -exec touch {} \;
 查找某一类文件的大小:
 find ./ -name "*.class" -exec du -ch {} + | grep total
 
+## grep egrep
+[正则查找](http://www.cnblogs.com/hfutwyy/p/3415577.html)
+egrep -r  'Daily.+HiveJob' *
 
