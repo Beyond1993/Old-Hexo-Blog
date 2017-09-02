@@ -60,3 +60,6 @@ org.apache.hive.service.cli.HiveSQLException: Error while processing statement: 
     at java.lang.Thread.run(Thread.java:745)
 
 数据已经写完了。
+
+6. 来Pinterest广告组也有一个多月了，这一个多月，总是疲于奔命，学东西，写代码，调bug.乘着这次休假，好好的思考一下。
+ad的含义，为什么这些东西可以赚钱.
