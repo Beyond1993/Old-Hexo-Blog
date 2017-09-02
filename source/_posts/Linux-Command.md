@@ -20,7 +20,11 @@ find ./ -exec touch {} \;
 查找某一类文件的大小:
 find ./ -name "*.class" -exec du -ch {} + | grep total
 
+查找每一类文件的个数:
+find . -name "*.java" | wc -l 
+
 ## grep egrep
 [正则查找](http://www.cnblogs.com/hfutwyy/p/3415577.html)
 egrep -r  'Daily.+HiveJob' *
+
 

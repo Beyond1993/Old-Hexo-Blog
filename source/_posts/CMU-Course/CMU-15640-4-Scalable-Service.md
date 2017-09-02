@@ -1,5 +1,5 @@
 ---
-title: CMU-15640-1
+title: CMU-15640-4
 date: 2017-08-20 08:03:01
 categories: CMU课程
 tags: cmu
@@ -37,7 +37,12 @@ gcc -Wall -I/home/wayne/Desktop/15440-Distributed-Systems/Transparent-Remote-Fil
 ## 原理
 ![](/images/rpc.png)
 
+[参考](http://www.cnblogs.com/codingexperience/p/5930752.html)
+
 ## Run
 
 
 ## Analysis
+
+## 小结
+rpc的本质就是序列化与反序列化

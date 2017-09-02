@@ -27,3 +27,36 @@ Map是根据block的大小和文件的数量，那reduce呢？
 这里面很实际的问题就是，我什么时候需要自己设置,reduce 数量。
 
 对于一个ads log,这次跑的map reduce 数量是227260, 而我自己设置量reduce 为 1000? 是否最优？  
+
+17/09/01 22:48:13 INFO exec.Task: 2017-09-01 22:48:13,281 Stage-2 map = 100%,  reduce = 99%, Cumulative CPU 215711.48 sec
+17/09/01 22:48:14 INFO exec.Task: 2017-09-01 22:48:14,335 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 206914.61 sec
+17/09/01 22:48:22 INFO exec.Task: MapReduce Total cumulative CPU time: 2 days 9 hours 28 minutes 34 seconds 610 msec
+17/09/01 22:48:22 ERROR exec.Task: Ended Job = job_1501651753784_149220 with errors
+17/09/01 22:48:24 INFO impl.YarnClientImpl: Killed application application_1501651753784_149220
+17/09/01 22:48:24 INFO log.PerfLogger: <PERFLOG method=FailureHook.com.pinterest.hive.hooks.SingerLoggingHook from=org.apache.hadoop.hive.ql.Driver>
+17/09/01 22:48:24 INFO log.PerfLogger: </PERFLOG method=FailureHook.com.pinterest.hive.hooks.SingerLoggingHook start=1504306104726 end=1504306104727 duration=1 from=org.apache.hadoop.hive.ql.Driver>
+17/09/01 22:48:24 ERROR ql.Driver: FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+17/09/01 22:48:24 INFO log.PerfLogger: </PERFLOG method=Driver.execute start=1504300641792 end=1504306104729 duration=5462937 from=org.apache.hadoop.hive.ql.Driver>
+17/09/01 22:48:24 INFO ql.Driver: MapReduce Jobs Launched: 
+17/09/01 22:48:24 INFO ql.Driver: Stage-Stage-1: Map: 227260  Reduce: 1000   Cumulative CPU: 2974595.21 sec   HDFS Read: 14589919508 HDFS Write: 482469565493 SUCCESS
+17/09/01 22:48:24 INFO ql.Driver: Stage-Stage-2: Map: 1000  Reduce: 1000   Cumulative CPU: 206914.61 sec   HDFS Read: 482478116869 HDFS Write: 0 FAIL
+17/09/01 22:48:24 INFO ql.Driver: Total MapReduce CPU Time Spent: 36 days 19 hours 45 minutes 9 seconds 820 msec
+17/09/01 22:48:24 INFO log.PerfLogger: <PERFLOG method=releaseLocks from=org.apache.hadoop.hive.ql.Driver>
+17/09/01 22:48:24 INFO log.PerfLogger: </PERFLOG method=releaseLocks start=1504306104730 end=1504306104730 duration=0 from=org.apache.hadoop.hive.ql.Driver>
+17/09/01 22:48:24 ERROR operation.Operation: Error running hive query: 
+org.apache.hive.service.cli.HiveSQLException: Error while processing statement: FAILED: Execution Error, return code 2 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+    at org.apache.hive.service.cli.operation.Operation.toSQLException(Operation.java:328)
+    at org.apache.hive.service.cli.operation.SQLOperation.runQuery(SQLOperation.java:181)
+    at org.apache.hive.service.cli.operation.SQLOperation.access$100(SQLOperation.java:70)
+    at org.apache.hive.service.cli.operation.SQLOperation$1$1.run(SQLOperation.java:232)
+    at java.security.AccessController.doPrivileged(Native Method)
+    at javax.security.auth.Subject.doAs(Subject.java:415)
+    at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+    at org.apache.hive.service.cli.operation.SQLOperation$1.run(SQLOperation.java:244)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+    at java.lang.Thread.run(Thread.java:745)
+
+数据已经写完了。
