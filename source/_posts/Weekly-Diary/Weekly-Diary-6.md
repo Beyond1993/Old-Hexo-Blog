@@ -30,7 +30,8 @@ mapred.map.tasks     -->    mapreduce.job.maps 没啥用
 mapred.reduce.tasks  -->    mapreduce.job.reduces
 
 **SET hive.merge.mapfiles=false;
-SET hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat;**
+SET hive.input.format=org.apache.hadoop.hive.ql.io.HiveInputFormat;
+SET mapreduce.job.reduces = 1000;**
 亲测有效。
 
 3. 分清hive的每个部分，对应的是mapper 还是 reducer
