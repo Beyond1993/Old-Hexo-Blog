@@ -23,7 +23,9 @@ tags:
 这让我想到当年明月在明朝那些事里写的名将是怎样练成的，带领几十万人，一个细小的决定可能决定里几十万人的生死，在任何情况下都要保持冷静。
 作出正确判断。自己当个班长都当不好，面个试还紧张的要死。真是觉得做英雄的真是非常人，行非常事。
 
-### 规律题
+### 字母推理题。
+虽然大多数的推理题，都是
+
 • QPS : TSV -> IHK : (LKN) 都是+3
 • 46 : 64 -> 82 : (100) (差为18)
 • EAGLE : FZHKF -> THANKS : (UGBMLR) +1, -1 找规律的(**奇数+1偶数- 1**)
@@ -96,6 +98,7 @@ ANO LUM ITA L NIT
 ### 填空题：
 
 ####  走路问题
+这里的take an about-turn, turn around,    reverse turn.
 If northwest becomes east, northeast becomes south, and so on, what does southeast become? (west)
 Lily can't find her home, she is 25 yards southwest of her home, then she walked 20 yards toward north, where is her home from her now? (15 yards, east)
 一个面朝北的朋友，先左走15m，然后一个about-turn走了30，这货在哪? (about turn应该指的是向后转)
@@ -113,31 +116,80 @@ Lily can't find her home, she is 25 yards southwest of her home, then she walked
 推断一个人的年龄 (1)知道所有人的平均年龄 (2)所有人年龄都一样， 问(1)和(2)怎么来推断这个人的年龄
 
 #### 印度公司问题
-有个是问印度公司在radio上做广告，记忆没错的话，选B。大意是，radio覆盖 面广，公司向推广自己的，应该去上面做广告。It has been proven by research
-that in India, a company which purchases saturation radioadvertising will get maximum brand recognition.
-1 A high degree of brand recognition will help a company win a higher share of the
-market.
-2 Radio has wide listenership and companies intending to increase their
-awareness,should advertise it.
-3 For maximum brand recognition, a company need not spend on media channels
-other than radio publicizing.
-4 Brand recognition in India is more heavily dependent on where the brand advertises
-than the quality of its offering.
-原题说的saturation advertising是指同一个广告反复宣传，就好像脑白金的洗脑
-歌一样。。而研究表明通过这种广播，可以收获最大的品牌认同度。
-1 高品牌认同度使公司获得更高的市场份额(研究说的是宣传与认同度的关
-   系，没有涉及市场份额)(品牌认知度和市场份额的关系未在题目条件
-中提及，无关联)
-2 广播有不错的听众基础，如果公司想提高他们的知名度认同度，应该考虑通
-过这种方式.
-3 为了达到最大的品牌宣传效果，公司不应该考虑广播之外的宣传方式 (广播
-频率max导致宣传效果max也只是广播频率的影响，并不代表其他宣传渠 道如何)。(并未说明其他广告渠道对最大化品牌认知度的贡献，所以 不该武断排除其他一切非收音机渠道的广告策略)
-4 在印度，品牌认同更看宣传的where，而不是质量 (同样原文没提到质量和 效果之间的关系)(题目条件未提及广告质量，无关联)
+这是个阅读理解题。应当掌握托福阅读理解的技巧。
 
+阅读理解中，错误选项的设置，无非是
+无中生有
+张冠李戴
+混淆概念。
 
-####  录用 PM
+所以此题的解题技巧就是，先确定句子成分，找出关键概念，关键概念间的关系。
+
+It has been proven by research that in India, a company which purchases saturation radio advertising will get maximum brand recognition.
+which option you can select:
+
+1 A high degree of brand recognition will help a company win a higher share of the market.
+2 Radio has wide listenership and companies intending to increase their awareness,should advertise it.
+3 For maximum brand recognition, a company need not spend on media channels other than radio publicizing.
+4 Brand recognition in India is more heavily dependent on where the brand advertises than the quality of its offering.
+
+key conception: staturation advertising  <---> brand recognition
+relationship : maximun
+
+A option, brand recopgnitino <--> share of the market. wrong 张冠李戴
+B option, radio advertiseing increase their awareness. right 
+C option, not spend ohter than the radio.wrong. 无中生有
+D option, Brand recognition <---> brand advertisers , quality. 无中生有。
+
+#### 环保公司问题
+选择是否将候选公司放到一个环保list上，条件
+1 have Environment Clearance Certificate ECC (一种认证)
+2 developed at least 3 solar products.
+3 none of their products are from synthetic 
+4 headquater in Texas
+5 have a grade A certified unit of its products.
+6 not have any legal dispute ralated to land or forest, pending against them 
+如果不满足2,但是有一种产品正在试验中:推荐给COO
+如果不满足5:推荐给Director of the company
+
+#### 录用 PM
+一个公司要招PM，合理的candidate需满足以下条件:
+1. 本科是学CS的
+2. 有MBA学位
+3. 本科GPA 3.0+
+4. 如果没有MBA学位，但是工作5年以上，需上报HR
+5. 本科不是学CS，但是在CS相关工作3年以上，上报HR 
+那么，请问:闰土本科学热水锅炉维修的，GPA 4.0，没有念过MBA，在 Google修了5年的锅炉，当了3年的程序员，则应该: D
+A. 录用
+B. 不录用
+C. 条件不充分
+D. 上报HR
+
+另一个条件:
+1 候选人必须有硕士学位，且GPA为A
+2 必须有两年以上工作经验，
+3 若1不满足报告director 小明从事某工作三年，有CS和MBA，本科GPA为A-则:报告主管。
+又一个条件条件是:
+1 Master in commerce and at least B / have CPA 2 年龄大于20 ，小于25
+3 流利的英语和西班牙语.
+4 愿意付125刀押金
+5 愿意承诺为公司工作5年
+• 如果1不满足-> refer to M director
+• 如果4不满足 -> refer to chair man .
 
 #### 快递收费
+快递费要不要收的问题。条件是
+1 地区code 大于10一类，小于10 另一类
+2 商品价格超过500
+3 不是deal的时候买得
+4 之前没有bulk 超过5%的折扣.
+5 客户有优良购买记录3年
+• 如果不满足2，那么要是他满足地区code小于10，收10刀，大于10，收8刀。
+• 如果不满足3，那么region code小于10，收5刀，大于10，收12刀
+• 若不满足两条，则必须付全款。
+
+来了一个老头，买了150刀的东西，不是deal的时候买的，也没有之前折扣。问 他可不可以不付运费。
+选:不满足两条，2,3 附全款30刀
 
 ####  四人位置
 解题顺序：
@@ -187,6 +239,11 @@ Four questions:
 For factory problems, take care of the global assumptions andl ocal assumptions.
 
 ####  出差问题
+说有M1,M2,M3,M4,M5和W1,W2,W3。出差必须派至少三男一女。M1和M3不能共存，M4和W2不能共存。
+至少
+第一问问如果派了M2和M3和W2，还可以派谁 （至少三男一女则M1和M4都不可能，所以M5, W1,W3）
+第二问问如果M1 M2去了，还可以派谁。（M5W2W1W3,M4W1W3,M5M4W1W3）
+第三问如果去了四个男生，那么谁不能选。(W2,因为M1和M3不能共存，则M4一定在，则W2不能在)
 
 #### 圆桌问题
 圆桌问题解题技巧：
