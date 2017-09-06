@@ -1,6 +1,265 @@
 ---
 title: Interview-Amazon-OA1-Debug
 date: 2017-09-06 06:17:33
-categories:
+categories: 面试
 tags:
 ---
+Debug 题只有七题。
+总体原则：
+
+1. ArraySum: 计算一个整数数组的和          
+bug: sum = arr[i], should be sum += arr[i]
+
+2. CountOccurence: 统计某数在整数数组中出现的次数
+ bug: while loop    i++
+
+3. CheckGrade:根据百分制分数计算 GPA
+bug:判断条件 “||” should be “&&”
+
+4. RemoveElement: 删除数组中特定位置元素，超出范围则返回原数组         
+bug:第七行arr[i++] should be arr[i+1]
+```java
+public static int[] removeElement(int arr[], int index) {
+    int i, j, len = arr.length;
+    if (index < len) {
+        for (i = index; i < len - 1; i++) {
+     arr[i] = arr[i+1];
+        }
+        int rarr[] = new int[len - 1];
+        for (i = 0; i < len - 1; i++) {
+     rarr[i] = arr[i];
+        }
+        return rarr;
+    } else
+        return array;
+} 
+```
+
+5. DigitCount: 将一个整数除以它的位数取余数  num%len(num) == 0 or != 0
+bug:错在最后返回的除法时保留原数就行 把num用另一个变量存起来就好 因为num最后变成了0
+```java
+public int find(int num) {
+    int count = 0;
+    while(num != 0) {
+        num = num/10;
+        count++;
+    }
+    return num%count;
+}
+```
+
+6. Sort Array
+```jave
+public static int[] sortArray(int[] arr) {
+    int len = arr.length;
+    int small, pos, i, j, temp;
+    for (i = 0; i <= len - 1; i++) {
+        for (j = i; j < len; j++) {
+     temp = 0;
+     if (arr[i] < arr[j]) { 
+         temp = arr[i];
+         arr[i] = arr[j];
+         arr[j] = temp;
+	    }
+        }
+    }
+    return arr; 
+}
+```
+7. Sort Array 2
+```java
+public static int[] sortArray2(int arr[]) {
+    int i, max, location, j, temp, len = arr.length;
+    for (i = 0; i < len; i++) {
+        max = arr[i];
+        location = i;
+        for (j = i; j < len; j++) {
+     if (max < arr[j]) { 
+         max = arr[j];
+         location = j;
+     }
+        }
+        temp = arr[i];
+        arr[i] = arr[location];
+        arr[location] = temp;
+    }
+    return arr; 
+}
+```
+8. replace values 数组长度如果是偶数就把元素都改成1，奇数就都改成0
+bug: for loop 里的  i<=len, j<=len  把  <= 改成 < 
+```java
+public static int[] replaceValues(int arr[]) {
+    int i, j, len = arr.length;
+    if (len % 2 == 0) {
+        for (i = 0; i < len; i++) {
+     arr[i] = 0; 
+        }
+    } else {
+        for (j = 0; j < len; j++) {
+     arr[j] = 1; 
+        }
+    }
+    return arr; 
+}
+```
+9. reverse array  
+但class 的名字居然是 sort array
+bug: arr[len-1] 改成 arr[len-i-1] for 循环里的 len +=1去掉   
+```java
+public static int[] reverseArray(int[] arr) {
+    int i, temp, originalLen = arr.length;
+    int len = originalLen;
+        for (i = 0; i < originalLen / 2; i++) {
+     temp = arr[len - i - 1];
+     arr[len - i - 1] = arr[i];
+     arr[i] = temp;
+     // len +=1;
+    }
+    return arr;
+}
+```
+10. EvenOdd pattern 
+for 循环缺大括号      
+```java
+public static void print4(int num) {
+    int i, print = 0;
+    if (num % 2 == 0) {
+        print = 0;
+        for (i = 0; i < num; i++) {
+     System.out.print(print + " ");
+     print += 2; 
+        }
+    } else { 
+        print = 1;
+        for (i = 0; i < num; i++) {
+     System.out.print(print + " ");
+     print += 2;
+        }
+    }
+}
+```
+11. Manchester:输入一个01数组，输出manchester编码，假设第一个 elem前的数字是 0
+bug:里面就一个判断语句，把判断语句的  == 改成 != (考虑 if (i == 0) ? ) 
+result = (A[i] == A[i - 1]); // bug
+output[i] = result ? 1 : 0
+
+12. Selection sort
+bug: if 里面的判断它写的是 arr[min]> arr[x], 改成 arr[min]> arr[y] 
+```java
+for (x = 0; x < n; x++) {
+    int index_of_min = x;
+    for (y = x; y < n; y++) {
+        if (arr[index_of_min] > arr[x]) {
+     y = index_of_min;
+        }
+        int temp = arr[x];
+        arr[x] = arr[index_of_min];
+        arr[index_of_min] = temp;
+} }
+// selection sort in ascending order 升序  
+for (int x = 0; x < n; x++) {
+    int index_of_min = x;
+    for (int y = x; y < n; y++) {
+        if (arr[index_of_min] > arr[y]) {
+     index_of_min = y;
+        }
+    }
+    int temp = arr[x];
+    arr[x] = arr[index_of_min];
+    arr[index_of_min] = temp;
+}
+// bubble sort in descending order 降序    
+for (int x = 0; x < n; x++) {
+    for (int y = x; y < n; y++) {
+        if (arr[x] < arr[y]) {
+     int temp = arr[x];
+     arr[x] = arr[y];
+     arr[y] = temp;
+        }
+} }
+// ?
+for (x = 0; x < n; x++) {
+    int index_of_min = x;
+    for (y = x; y < n; y++) {
+        if (arr[index_of_min] <= arr[x]) {
+     y = index_of_min;
+     int temp = arr[x];
+     arr[x] = arr[index_of_min];
+     arr[index_of_min] = temp;
+        } 
+    }
+}
+```
+13. insertion sort < 改 > 或者 > 改 <
+```java
+for (int i = 1; i < n; i++) {
+    if (arr[i - 1] > arr[i]) { 
+        int temp = arr[i];
+        int j = i;
+        while (j > 0 && arr[j - 1] > temp) {
+     arr[j] = arr[j - 1];
+     j--; 
+        }
+        arr[j] = temp;
+    }
+}
+```
+14. PrintPattern2 
+a
+ab
+abc
+```java
+public static void print2(int row) {
+    for (int i = 1; i <= row; i++) {
+        char ch = 'a';
+        char print = ch;
+        for (int j = 0; j <= i; j++) {
+     System.out.print((print++));
+        }
+        System.out.println();
+    }
+}
+```
+char ch = 'a';
+char print = ch;
+for (int j = 0; j <=i; j++) {
+    System.out.print((ch++));
+}
+System.out.println("");
+改为
+char ch = 'a';
+char print = ch;
+for (int j = 0; j <=i; j++) {
+    System.out.print((print++));
+}
+System.out.println(“”);
+
+bug: 错在它把char ch = ‘a’ 定义放在了for loop 前，移进来就好，同时删掉了没用的变量。
+            
+15. PrintPattern3
+有一道题是要给一个 row number，输出相应的行数的pattern。比如：    
+row number = 3 则，输出 
+11
+1111
+111111
+
+row number = 2 则输出：     
+11
+1111
+
+```java
+public static void print3(int row) {
+    int x = 1;
+    for (int i = 1; i <= row; i++) {
+         for (int j = i; j > 0; j--) {
+        System.out.print(x + "" + x);
+         }
+         System.out.println();
+    }
+}
+``` 
+bug: 第一层 for 循环少了大括号，导致最后那个System.out.println() 最后只执行一次       
+16. remove duplicates form unsorted array 循环下标要从 i + 1  开始 
+17. Array 奇数偶数 for loop i+=2 改成 i++
+
