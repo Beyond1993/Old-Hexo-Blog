@@ -5,6 +5,12 @@ categories: 面试
 tags:
 ---
 http://www.1point3acres.com/bbs/thread-210460-1-1.html
+http://wdxtub.com/interview/14520850399861.html
+
+成功不可复制，但是失败总是一样的：
+http://www.1point3acres.com/bbs/thread-203776-1-1.html
+http://www.1point3acres.com/bbs/thread-224773-1-1.html
+http://www.1point3acres.com/bbs/thread-203921-1-1.html
 
 <!--想不到时隔半年多，又开始面亚麻了。
 http://www.1point3acres.com/bbs/thread-210460-1-1.html
@@ -30,9 +36,10 @@ http://www.1point3acres.com/bbs/thread-210460-1-1.html
 做OA前认真复习，做的时候忘记原题。前面小题抓紧时间。后面大题仔细推敲.
 
 ### 推理
-##### 字母推理
 虽然大多数的推理题，都是转化为数字，但是字母题侧重于位置，间隔，奇偶，映射。
 而数字题侧重于数学推导，求和，平方，斐波拉契额数列，按位与，n^2,n^3, n^3 - n, n^n, 2^n,倍数
+
+##### 字母推理
 
 • D, H, L, (p) (P，等间距)
 
@@ -80,6 +87,58 @@ ANO LUM ITA L NIT
 或者
 4 5 12 8 9 -> 3 4 1 7 8 (每位都-1) 13 21 13 2 1 9 -> 02 10 02 1 26 8 就是2 10 2 1 26 8 (B J B A Z H)
 
+A17R: D12P - > G7N: J2L （R=A+17, 17 – 12 = 5）
+ABIJ, DEHI, MNQR, STWX（a3-a2 = 3）
+ACFJ->CEHLPRUY-> RTWA
+ACG->HJN DGM-> KNT （a1’ – a1 = 7, a2’ – a2 = 7, a3’ – a3 = 7）
+ADBC --> EHFG ::ILJK --> MPNO（4个一组）
+ADGJM: PSXRV(FINRV) : KNQTW : PSVYB 其他都是差2，选第二个
+ADF MPR ILN EHJ（元音开头，位与操作，ILN不是0）
+ADP   QTS   HKR  STE （ 或者QTS，位与的结果不是0）
+AE5 DF6 HN14 KP2（P = 16）
+AFK : TWB : PUZ : DIN (间隔4)
+ASSERTIVENESS->SENSSAEVISTRE : MULTINATIONAL-> ANOLUMITALNIT(3个一组位置变化呢)
+AZP: ZAR :: TXK: SYM (-1, +1, +2)
+bb c MN : dd e OP : gg f QP : mm n WX (第二个字母是第一出现字母的后一个)
+BAD: FEH, POS, TSV (-1, +3)
+BCEH : PQSV : CDGK : STVY (第二三位间隔2)
+BECD: FTGH :: JMKL : NQOP 同上，+4
+BGL : DIN : MRW : HLR（规律是差为5）
+BHE : FLI => JPM :(NTQ) (每位+4)
+CEH : PRV: TVY: MOR (间隔：+2, +3)
+COMPUTER -->PMOCRETU :: TELEVISION -> VELETNOISI（HALF镜像：VELET|NOISI）
+COMPUTER :GKQLYPIN  -> SENATE : WARWXA（奇数+4偶数-4）
+D, H, L, P. （P，等间距）
+DEB: FGD: PQN: TUS  (第二位第三位差3)
+DELHI : CDAGH =>MUMBAI : BJBAZH
+DICE : 3824 =>EDGE : 4364 (每位减1)
+DJ:  WQ =>  FK : UP (DJ +6, WQ -6; FK + 5, UP -5)
+EAGLE : FZHKF ::THANKS : UGBMLR  +1, -1 找规律的（奇数+1偶数-1）
+EXAM: FYBN :: TEST :  UFTU (+1)
+FASTER --> HCUVGT:: SLOWER --> UNQYGT （+1）
+FHKO,CEHL, ZBEJ, XZCG 数字+2 +3 +4.
+HIK DGJ LPT SUW（字符间等距）
+JLP LNT TVZ DFJ（a1+2 = a2, a2+4 = a3, 故选2）
+JOHN --> LSNV ::MARK  --> OEXS (+2 +4 +6 +8)
+KML : PRQ: NPQ : TVU (第三位是第一和第二位间隔的字母)
+KPQR : LRTV =>DGHY: EIKC （前后相减每一位的增加分别为1,2,3,4
+LKJI-XYWV-WVUT-KJIH（字符逆序）
+LOMN : HJIK: QTRS : UXVW (第一位和第二位差3)
+MARKET->12-26-17-10-4-19. PRODUCT: 15,17,14,3,20,2,19(-1)
+MQD:KRK   SWM: TXQ（13, 17,  4；11, 18, 11交叉（13-18）（17-11） （4-11））
+NORMAL : LAMRON =>SYSTEM : (METSYS)就是把字母顺序倒过来
+POM,KJH, TSQ, UVS 数字-1-2
+PRS TVX FIK (LME) 唯一不递增
+QDXM : SFYN :: UIOZ :WKPA (a1’ = a1+2, a2’ = a2+2, a3’=a3+1, a4’ = a4+1)
+QPS : TSV :: IHK : (LKN)   都是+3
+QSV :CFK : PSX : RUZ
+RHCAI   OEST   HNDA  ADEH（RHCAI, CHAIR不是身体部分）
+SOUP: RPTQ => TOUR: SPTS (-1, +1, -1, +1)
+STUMP : PQRJM => PITCH: MFQZE (每位减3)
+STV:XYA:KKT:BDE（其他都是两偶一奇，只有KKT是两奇一偶）
+TENNIS : UDOMJR =>CRICKET : DQJBLDU (+1, -1)
+VALIANT : UBKJZOS ::TRANSCEND:  SSZORDDOC (奇数位-1，偶数位+1)
+
 ##### 数字推理
 • 46 : 64 -> 82 : (100) (差为18)
 
@@ -120,6 +179,40 @@ ANO LUM ITA L NIT
 • 1:4:27:256:3125 (n^n)
 
 • 2, 5, 26，(677) (规律是当前数字是前一个数字平方加1)
+
+0.28  0.561.68 (6.72) (0.56 = 0.28*2， 1.68 = 0.56*3 , 1.68*4)
+0 1 1 2 4 8 (16 )（前面的所有数加起来）
+0 1 1 2 3 7 22 (0*1 + 1 = 1, 1*1 + 1 =2, 1*2+ 1 =3, 2*3+1 = 7, 3*7+1 = 22)
+0, 2, 6, 12, 20, 30（间隔2，4，6，8）
+0 2 3 5 8 10 15 17 2426 35  +2+1+2+3    +2+9
+0, 3, 8, 5, 15
+1，1，4，2，13，3，40，4，（121）（an = an-2 + 3n-1）
+1:4:27:256 : 3125（n^n）
+1，5，7，8【解答：1 + 2^2 = 5， 5 + 2^1 = 7 ，7 + 2^0 = 8】
+2, 3, 7, 8, 13, 14, 20 （间隔：1,4,1,5,1,6）
+2, 5,26，677（规律是当前数字是前一个数字平方加1）
+2, 8, 5, 6, 8, 4,11（ 2、5、8、11， 加3得来的。 另外一组应该是减2，也就是8、6、4）
+3 6 15 42 123 (3 + 31 = 6, 6 + 3^2 = 15, 15 + 3^3 = 42, 42+ 3^4 = 123)
+3, 6, 18, 108, 1944 （18 * 6 = 108，所以应该是18*108）
+3 7 13 21 31 （间隔4，6，8）
+3, 11, 25, 45, (71)
+3, 15, 35, 63, (99) (15 = 3*5, 35 = 5*7, 63 = 7*9, 99 = 9*11)
+4,5,12,8,9 =>3,4,1,7,8问 13,21,13,2,1,9=>2,10,2,0,8(按位减1（B J B A Z H））
+4,12,6,18,12,36,30, 90（4*3=12,12-6=6,6*3=18,18-6=12,12*6=36,36-6=30）
+5, 9, 16, 29, 54（9 = 5*2 – 1, 16 = 9*2 – 2, 29 = 16*2 – 3,）
+5 11 19 29  41（间隔6，8，10）
+8, 8, 15, 23, 38, (61)
+10 14 23 39 64 100（间距为完全平方数）
+10  74  202  394  650（间距递增64）
+16 30 46 62 82（13+3， 29+1， 43+3， 61+1 然后前面的都是质数，每个质数之间隔了三个质数， 61之后第四个质数是79， 79+3=82，或者16加上后面的数为第二个的结果）
+24, 50 => 102 : 206 (X2 + 2)
+46 : 64 :: 82 : (100) （差为18）
+82, 97, 114, 133, (154) (间隔15, 17, 19, 21)
+985:874 :: 763:(652) （每一位减一即可）
+865 - 532 :976--> 643 （右边是左边每一位减3）
+27:24 => 64: 60（应该是60。24=3^3-3,64=4^3,4^3-4=60）
+956:794:884:678（678，前几组加起来和都是20）
+(1, 4, 16) : (17, 20, 24): (8, 11, 18) : (19, 20, 5)（ADP : QTX: HKR: STE）(位与不为0)
 
 ### 排异题
 间距，奇偶，交叉
@@ -311,7 +404,38 @@ II) The size of postassium and cesium is greater than that of lithium.
 
 together are not sufficient 
 
+#### 买卖冰箱
+问想要求今年有多少个冰箱sold了，需要下述哪几个条件
+1. 今年售出的冰箱是去年的3倍
+2. 去年sold了40个冰箱
+我的答案是两个条件都需要
 
+#### 兴趣小组
+假设人们可以有3种兴趣，且每人至少有一个
+I. 135个人中，只有5个人有3种兴趣，有100个人有1种兴趣.
+II. 400个人中，有35个人至少有2种兴趣
+问，是否能得出exactly 2个兴趣的人数
+
+只有I能得出
+
+#### 哪天买车
+conditions: 
+I. Before 10/19/2009, not before 10/16/2009
+II. after 10/17/2009, not later than 10/20/2009
+问LILY哪天买的车？
+选的I, II两个条件加一起可以得出
+
+#### 今年生日
+说小红this year的birthday是which day？.
+I. It's on May 26th,May 27th being Wednesday.
+II. It's not on Monday.
+I only is sufficient。
+
+#### 妹妹年龄
+问妹妹今年多大啦？
+I.妹妹比哥哥小xx岁
+II.哥哥比妈妈小yy岁，妈妈zz年生的
+I, II 加一起可以得出
 ### 阅读理解
 这是个阅读理解题。应当掌握托福阅读理解的技巧。
 阅读理解中，错误选项的设置，无非是
@@ -569,9 +693,27 @@ AGE B CDF H, AE可互换，BH可互换.
 
  八角桌， B和H正对着，F在C的右边两个位置，A 和E在G的两 侧，C朝北。
 
+A, B, C, D, E, F, G, H are sitting around a round table. ‘F’ is two places to the right of ‘C’. ‘A’ and ‘E’ are on either side of ‘G’. ‘B’ and ‘H’ are opposite to each other. ‘C’ is facing north.
+Q1 Who is sitting opposite to ‘D’ ? G
+Q2 以下哪两人坐对面? D&G.
+Q3 谁坐D旁边? C. 
+Q4 which of the following arrangements (in anti-clockwise) is possible?
+A  AGEBDCFH
+B  AGEBCDHF
+C  AGEBCDFH
+D  ABFDCHEG
+
 #### 团团坐，排排坐问题
-6人团团坐问题，有六个人 GASMNR, 注意理解 G, A，S 两两不能对坐，所 以总体来说分两种情况，GAS三人间隔而坐，或者GAS全都挨着坐。所有团团 做的问题都围绕此基础展开。有一题说R 在A S 中间，问你R对面是谁。还有 就是 G左右是A R,问A 对面是谁。
+6人团团坐问题，有六个人 GASMNR, 注意理解 G, A，S 两两不能对坐，所以总体来说分两种情况，GAS三人间隔而坐，或者GAS全都挨着坐。所有团团做的问题都围绕此基础展开。有
+Q1. If R 在A S 中间，问你R对面是谁(G)。
+Q2. if G左右是A R,问A 对面是谁(M or N)。
+Q3. if NAR 连着坐， M两边是谁(S & G). 
+Q4. if NAR 连着坐， A对面是谁（M）
+
+
 说甲乙丙丁排排坐，甲在乙右边，丙在丁右边，能不能推断粗谁最右。（不能）
+
+
 ####  七房间排序问题：
 七房间排序问题解题技巧：七房间排序问题，和圆桌问题的不同之处在于，圆桌是没有初始位置下标的。
 step1: 找相邻， 
