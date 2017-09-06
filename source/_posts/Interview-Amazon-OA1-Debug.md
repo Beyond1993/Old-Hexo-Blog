@@ -5,7 +5,28 @@ categories: 面试
 tags:
 ---
 Debug 题只有七题。
-总体原则：
+总体原则(引用小土刀博客）http://wdxtub.com/interview/14520850399861.html
+```text
+OA1 - Debugging
+
+一些可能的问题：
+
+while循环缺少i++造成死循环
+Print Pattern：for-loop里一共两句话但是没有用大括号，所以第二句没有被包含进去
+insert sort descending order: <> 反了
+selection sort: arr[min]>arr[x] 改成 arr[y].
+reverse array: arr[len-1] 改成 arr[len-i-1], 循环结束前去掉 len+=1;
+循环里要加上 i++， 否则死循环
+曼切斯特如果arr[i-1],arr相等为0，否则为1，要注意不但==要改成!=，ret[0]也要加一下，不然有一个case过不了。
+解题技巧
+
+因为地里面经分散,大家又说很简单,多办懒得附上题目,在这里提供几个思路给大家:
+
+排序类:这种题Compile & Run出来的结果,多半是Sort的顺序反了,稍微看一下找到关键的if statement把他反过来就成。我7题里遇到2题这种的。
+TLE类:这种结果TLE的多半是while死循环了,有while的检查一下。
+for loop类:有for loop的,检查一下大括号有没有加。
+其他类:其他特别的bug,多半地里找一下都有,记一下就成。
+```
 
 1. ArraySum: 计算一个整数数组的和          
 bug: sum = arr[i], should be sum += arr[i]

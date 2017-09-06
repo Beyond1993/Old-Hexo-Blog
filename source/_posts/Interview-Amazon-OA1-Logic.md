@@ -4,6 +4,7 @@ date: 2017-09-03 22:32:57
 categories: 面试
 tags:
 ---
+http://www.1point3acres.com/bbs/thread-210460-1-1.html
 
 <!--想不到时隔半年多，又开始面亚麻了。
 http://www.1point3acres.com/bbs/thread-210460-1-1.html
@@ -126,11 +127,11 @@ ANO LUM ITA L NIT
 
 • PRS TVX FIK (LME) (前三项为递增)
 
-• JLP (LNT) TVZ DFJ (10,12,16; 12,14,20; 20,22,26; 4,6,10; 差2差4递增)
+• JLP (LNT) TVZ DFJ (10,12,16; 12,14,20; 20,22,26; 4,6,10; 差2差4递增，面经还有一种解法是首字母是不是4的倍数，我觉的不对，如果只考虑首字母，没必要给出三个字母，这种推理题一般不会给出无用条件)
 
 • (ABIJ) DEHI MNQR STWX (ABIJ前后一对间距不同) (1,2,9,10; 4,5,8,9; 13,14,17,18; 19,20,23,24)
 
-• ADP QTS HKR STE (选1?都是完全平方数?，或者QTS，位与的结果不是 0?)
+• ADP QTS HKR STE (选1?都是完全平方数?，或者QTS，位与的结果不是 0?, 这题个人更偏向于国外网站选的是STE, 顺序加起来不为奇数，像这种题，偏向于 三个 是什么， 另一个不是)
 
 • RHCAI OEST HNDA ADEH(RHCAI?只有这个不是身体部位?)
 
