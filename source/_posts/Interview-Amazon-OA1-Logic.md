@@ -1,5 +1,5 @@
 ---
-title: Interview-Amazon
+title: Interview-Amazon-OA1-Logic
 date: 2017-09-03 22:32:57
 categories: 面试
 tags:
@@ -692,3 +692,4 @@ Q3 第二问那个女的没说家里有几个人，所以我选了信息不足�
 8. 学术大于60. From 1point 3acres bbs
 9. 如果不满足3，而且group discussion成绩不低于75，interview不低于70，上报给general manager.
 10. 如果不满足8，上报给executive director
+
