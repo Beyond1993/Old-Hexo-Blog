@@ -98,3 +98,5 @@ select col1, col2, col3_sum from
 )
 where col3 <= 10;
 
+[different format files](https://acadgild.com/blog/apache-hive-file-formats/)
+[API](https://hive.apache.org/javadocs/r2.1.1/api/org/apache/hadoop/hive/ql/io/package-tree.html)
