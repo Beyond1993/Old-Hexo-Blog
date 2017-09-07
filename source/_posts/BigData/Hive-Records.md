@@ -88,3 +88,13 @@ where query1 is null) t2 LATERAL VIEW explode(t2.matchType) b as match_type;
 
 
 ```
+#### Find Top 10
+select col1, col2, col3_sum from 
+(select col1,col2, col3_sum, ROW_NUMBER() over (partition by col1 order by col3_sum DESC) as col3 from 
+(select col1, col2, sum(col3) as col3_sum
+  from wfeng.table1
+  where  col1 = 'value1' or col1 = 'value2' 
+  group by col1, col2)
+)
+where col3 <= 10;
+
