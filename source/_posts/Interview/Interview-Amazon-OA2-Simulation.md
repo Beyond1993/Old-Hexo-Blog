@@ -20,6 +20,12 @@ Work Simulation
 
 
 估计项目开发时间
+一上来菜鸟Ben说，咱们有个项目，都没做过，不知道能不能赶上due，这 时候要怎么估计开发的进度(时间)。
+Manager放5，
+找有经验的人请教4， 
+上网查资料或是先做一段时间再估计都放3，
+还有其他裸上的就1吧。
+
 
 一个项目时间表设计
 
@@ -28,8 +34,36 @@ Work Simulation
 两周做四周的活
 
 搞个数据库
+Senior:
+I am an expert in metric generation and have set up the database we will be using. 
+I have done lots of queries on the database so I could really help here. 
+I will not be available until the middle of next week, but with my help you might be able to finish in two weeks. 
+Ben: 
+I am not very familiar with this database and don't have much experience in metric generation. 
+Working together, we might be able to do this in two weeks. 
+Keep in mind I don't know as much about this as Priya, so we will have to be extra careful to make sure everything works correctly. 
+
+Please rate the effectiveness of each response option for meeting the deadline. 
+A. Work on the project on your own. putting in extra effort to finish on time.  **2 - Slightly Effective** 
+B. Work on the project on your own until Priya is available. then continue to work on it together. **3 - Moderately Effective.**
+C. Work on the project with Ben being sure to watch his work closely because of his lack of experience **3 - Moderately Effective.**
+D. Tell your manager you will not be able to complete the project in the time available. **1 - Ineffective** 
+E. Cut features from the product so you will be able to meet the two week deadline. **1 - ineffective** 
+F. Start working on the project right away with Ben Then ask Priya to contribute what **5 - Hightly Effective** 
+
+
 
 系统是否升级
+Hi Team. 
+As you know. our Retail Website Team client has asked t indexing service. They requested a feature allowing us tc purchased. This would have a big benefit for all custome recommendations, which would benefit about 20% of cus may also be a good time for us to migrate the Retail Web the upgrade now, we will have to create the new features the new service after the migration_ This could impact au 
+hat we produce new features for their product ) recommend items based on gifts they have us_ They also wanted to build in seasonal-based gift tomers. I have heard several of you suggest that this site Team over to our new service. If we don't perform twice - once now in the legacy service and again in r work on future projects. 
+This legacy product recommendations service was a batc is much quicker and more dynamic. Our internal testing ir Retail Website as a whole. The benefits of this migration • service will reduce operational issues and will increase sp these benefits will help our client indirectly by helping us tn hp mnrp effective and efficient making our lives E 
+hed service that had a week lag. but our new system idicates our new system is ready to be pushed to the for the client seem pretty straightforward - the new peed of issue resolution. It is important to note that Essentially. this migration will allow us as the support ..asier The client may see more accurate data when not be a noticeable difference in the data format. 
+they call us although there will 
+The question here becomes our timeline. We have committed to building two features that will each take about a month but cannot be worked on concurrently. Our proposed upgrade and migration would require an extra two months of work. .forcing us to miss our deadline Keep in mind the Retail Website Team did not request this upgrade What do you all think our best course of action here is? Do any of you have a recommendation on what you 
+- dr4 rin hGrin7 
+
+
 I think we should perform the upgrade. As a compromise. we can include the gift recommendation feature the Retail Website Team wants by the deadline and then complete the upgrade. We can finish the seasonal-based gift recommendations feature after the deadline. 4
 
 I think we should perform the upgrade. The right thing to do is push back on the Retail Website Team because it will allow us to more efficiently serve the customer and the customer will be helped in the long run.
@@ -44,6 +78,26 @@ We should not perform the upgrade because it will not have a significant impact 
 
 
 推荐系统有抱怨
+15 Customer Complaints on Recommendation Service
+Priya Senior SDE
+We have been receiving a lot of customer complaints over the past three days about problems on pages related to your new Recommendation feature. It is likely being caused by one of the three services you’re using. There have been no recent updates to the services and we have ruled out all external factors. This issue is affecting customers, resulting in our product order rate dropping. We really need to solve this as quickly as possible. The reporting team generated an error report(see attached), let me know what you think.
+Thanks,
+Priya
+Based on the data in the Error Rate over Time report, how would you respond? Please select only one response option.
+Identify Service 1 as the problem
+Identify Service 2 as the problem
+Identify Service 3 as the problem
+I think Service 1 is the problem, but I would like to see another report to confirm 
+I think Service 2 is the problem, but I would like to see another report to confirm
+I think Service 3 is the problem, but I would like to see another report to confirm 
+I dont know which service is the problem. I want to request another report to get additional information.
+
+选I think Service 3 is the problem, but I would like to see another report to confirm， service 3 一直在涨
+这题有视频，一个经理讲咱最近服务器总是挂，什么情况?
+先选看internal bug的记录。
+给了一张图，3个service最近表现，service 3最近几天一直在涨。
+选I think service 3 is the problem, but I would like to see another report to confirm。 然后一个印度工程师说自己写了20年server，绝对不会错。选项纠结点在 于，这边我来查，那边他查不查，虽然我倾向于选让他也查，但是这次选他 不查。那个著名的he is not helpful就不要选了吧。 接下来的题目是，既然这次捅了这么大的篓子，那么应该怎么痛定思痛呢， 这题原则就是能自己解决就别麻烦别人。 增加开发过程中测试的时间/测试覆盖更多case，放5
+写Manuel test，放3 增加QA的人手，放2 让客户来当小白鼠发现问题，放1
 
 新产品设计
 
@@ -160,3 +214,23 @@ How does this affect customers? 3 1
 Are we receiving complaints from customers? 1 2
 How many customers is this affecting? 2
 If I help you with this problem, will you help me finish my work today? 6
+
+误解Deadline
+
+Hi Nadia. 
+
+It looks like there has been a miscommunication. Unfortunately, the Customer Incentives Team is dependent on your piece of this project in order for us to begin our piece. For the project to still meet the stakeholder timeline. we will need your team to complete your section in the next one week rather than two weeks. I hope this doesn't cause too much of a problem. 
+Best regards. 
+
+Please rate the effectiveness of each response option for completing this work on time: 
+
+Ask your whole team for help. explaining the urgency that another team is blocked. **5- Highly Effective**
+
+Work with the Customer Incentives Team to identify the critical features that they need by the deadline, and focus on those. **4 - Very Effective**
+
+Push the timeline back another week to ensure there is enough time for all work to be completed accurately.  **1 - Ineffective**
+
+Ask your ntinager for help in determining the best approach to meet the new deadline. **4 - Very Effective**
+
+Put in extra hours yourself to make sure everything gets done on time. **3 - Moderately Effective**
+
