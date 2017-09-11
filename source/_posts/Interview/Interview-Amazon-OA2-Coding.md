@@ -4,6 +4,7 @@ date: 2017-09-08 01:17:58
 categories: 面试
 tags:
 ---
+[code](https://gitlab.com/wfeng1/Amazon-OA2)
 
 据说还是那九题。
 
@@ -13,16 +14,15 @@ tags:
 2. Windows Sum
 给出一个integer的list或者数组和一个k size的窗口，返回这个list或数组的所有window sum，例如：
 [1,3,6,7,11], window size为3，返回[10,16,24] (10=1+3+6，16=3+6+7，24=6+7+11)
-
 注意(arraylist == null || arraylist.size() == 0)要return一个已经初始化的arrayList而不是null，否则会有一个test case过不去
 
 3. Rectangle Overlap
 Rectangle Overlap。这题和leetcode 算相交面积的区别：它帮你定义好两个类，一个叫Point，一个叫Rectangle，Rectangle包括左上右下两个Point, Point包括x, y的值.
 一个长方形用左上和右下两个的代表，题目给出4个点Point(x,y)，前两个点表示第一个长方形，后两个表示第二个长方形，返回是否重叠了
+
 4. K Closest Five
 一个组织发现了外星人，要给他们通信。我们的任务是给太空中的一些有可能有外星人的点发射信号。但是由于天线质量差（真是奇怪的理由），只能给太空中的 k 个点发射信号。现在又已知一个点P，它的坐标是(0,0)，这个点周围最有可能有外星人。好了，给你N个点， 找到这个N个点中离原点P最近的k个。
 实质：根据 x*x + y*y给一个数组排序么。
-
 给出一个List&lt;Point&gt;Point是定义好的类，属性就是x和y坐标，返回离原点(0,0)最近的k个点 
 
 5. High Five
@@ -37,16 +37,13 @@ Rectangle Overlap。这题和leetcode 算相交面积的区别：它帮你定义
 
 7. Copy List with Random Pointer
 跟leetcode 138一样，除了random的名字变成了arbitrary
-
 地里有人因为abritary 拼写问题，挂掉OA2, 
-
 结构 
 Node {
   int x,
   node next,
   node abritary
 }
-
 test case arbitary
 
 8. Process Order
