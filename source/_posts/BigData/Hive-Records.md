@@ -100,3 +100,13 @@ where col3 <= 10;
 
 [different format files](https://acadgild.com/blog/apache-hive-file-formats/)
 [API](https://hive.apache.org/javadocs/r2.1.1/api/org/apache/hadoop/hive/ql/io/package-tree.html)
+
+
+-- out join partitions
+Joins occur BEFORE WHERE CLAUSES. So, if you want to restrict the OUTPUT of a join, a requirement should be in the WHERE clause, otherwise it should be in the JOIN clause. A big point of confusion for this issue is partitioned tables:
+SELECT a.val, b.val FROM a LEFT OUTER JOIN b ON (a.key=b.key)
+WHERE a.ds='2009-07-07' AND b.ds='2009-07-07'
+will join a on b, producing a list of a.val and b.val. The WHERE clause, however, can also reference other columns of a and b that are in the output of the join, and then filter them out. However, whenever a row from the JOIN has found a key for a and no key for b, all of the columns of b will be NULL, including the ds column. This is to say, you will filter out all rows of join output for which there was no valid b.key, and thus you have outsmarted your LEFT OUTER requirement. In other words, the LEFT OUTER part of the join is irrelevant if you reference any column of b in the WHERE clause. Instead, when OUTER JOINing, use this syntax:
+SELECT a.val, b.val FROM a LEFT OUTER JOIN b
+ON (a.key=b.key AND b.ds='2009-07-07' AND a.ds='2009-07-07')
+..the result is that the output of the join is pre-filtered, and you won't get post-filtering trouble for rows that have a valid a.key but no matching b.key. The same logic applies to RIGHT and FULL joins.
